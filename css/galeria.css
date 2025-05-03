@@ -1,0 +1,22 @@
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.galeria img{
+    background: linear-gradient( white, rgba(109, 108, 108, 0.308));
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    object-fit: cover;
+    height: 300px;
+}
+
+@media(max-width 600px){
+    .galeria{
+        width: 100%;
+    }
+}

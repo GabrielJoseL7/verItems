@@ -13,6 +13,7 @@
     max-width: 300px;
     box-shadow: 2px 2px 20px black;
     height: 375px;
+    background: radial-gradient(#FBBFCA, #fbbfca00);
 }
 
 h2{

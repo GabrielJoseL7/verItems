@@ -1,0 +1,161 @@
+.container-contactForm{
+    width: 90%;
+    height: 650px;
+    margin: 80px auto 0; 
+    display: flex;
+    border: 1px solid black;
+    border-radius:  20px;
+}
+
+.img-contactform{
+    background-image: url(https://img.freepik.com/free-photo/delicious-biscuit-cone-scoops-ice-scream_23-2148430586.jpg?uid=R15066473&ga=GA1.1.1920053892.1746505631&semt=ais_hybrid&w=740);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 50%;
+    width: 55%;
+    height: 650px;
+    border-radius:  20px 0 0 20px;
+}
+
+.contact-form{
+    width: 75%;
+    height: 100%;
+    border-radius:  0 20px 20px 0;
+    background: radial-gradient(#FBBFCA, #fbbfca00);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h3{
+    width: 100%;
+    color: #2B061E;
+    font-style: italic;
+    font-weight: 700;
+    margin: 40px auto;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form input{
+    width: 55%;
+    background-color: rgba(255, 222, 173, 0);
+    color: #2B061E;
+    border: 2.5px solid #2B061E;
+    height: 35px;
+    border-radius: 25px;
+    padding:  0 0 0 20px;
+    box-shadow: 5px 5px 5px #0f020b;
+}
+
+input::placeholder{
+    color: #2B061E;
+    text-align: center;
+}
+
+label{
+    color: #2B061E;
+    font-size: large;
+    font-weight: 400;
+}
+
+textarea{
+    width: 60%;
+    height: 100px;
+    background-color: rgba(255, 222, 173, 0);
+    color: #2B061E;
+    border: 2.5px solid #2B061E;
+    border-radius: 25px;
+    padding:  10px 0 0 20px;
+    box-shadow: 5px 5px 5px #0f020b;
+}
+
+/* From Uiverse.io by RaspberryBee */ 
+.button {
+  height: 2em;
+  width: 5em;
+  border-radius: 1em;
+  border: 0.1rem solid transparent;
+  background-color: #2B061E;
+  transition: 0.3s;
+  font-size: 1em;
+  color: #FBBFCA;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05) rotate(3deg);
+}
+
+.button:active {
+  animation: borderMove 0.5s forwards;
+  transform: scale(0.9) rotate(-3deg);
+  background-color: #FBBFCA;
+  color: #2B061E;
+  border: 0.1rem solid #2B061E;
+}
+
+@keyframes borderMove {
+  0% {
+    border-width: 0.1rem;
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    border-width: 0.4rem;
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  100% {
+    border-width: 0.15rem;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.icons{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.icons div svg:hover{
+    animation: rotate 1.5s;
+}
+
+@keyframes rotate {
+    From {
+        transform: rotate(0deg);
+    } to { 
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 600px){
+    .container-contactForm{
+        flex-direction: column;
+        height: 750px;
+    }
+    .img-contactform{
+        height: 20%;
+        width: 100%;
+    } 
+    .contact-form{
+        width: 100%;
+        height: 80%;
+        border-radius:  0 20px 20px 0;
+        background: radial-gradient(#FBBFCA, #fbbfca00);
+        display: flex;
+        flex-direction: column;
+    }
+}

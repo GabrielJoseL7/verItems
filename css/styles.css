@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@300..700&display=swap');
+
+
 *{
     margin:0; 
     box-sizing: border-box;
@@ -12,18 +15,19 @@ body{
     display: flex;
     flex-direction: column;
     line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main{
-    flex: 1;
-    animation: entrada 1.5s;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 300;
 }
 
 header{
-    background-color: rgb(33, 75,201);
-    color: white;
+    background-color: #FBBFCA;
+    color: #2B061E;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 8px 8px 15px #2B061E;
+    border-radius: 0 0 15px 15px;
 }
 
 nav{
@@ -37,6 +41,11 @@ nav .logo{
     font-weight: bold;
 }
 
+.logo-img{
+    width: 90px;
+    height: 90px;
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -45,11 +54,13 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: #2B061E;
+    font-size: 1vw;
 }
 
 nav ul li a:hover{
-    font-weight: bolder;
+    font-weight: bold;
+    border-radius: 80%;
 }
 
 .hamburguesa{
@@ -66,23 +77,36 @@ nav ul li a:hover{
 }
 
 main{
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 20px;
+    flex: 1;
+    animation: entrada 1.5s;
+    max-width: auto;
+    margin-top: 80px;
+    padding-top: 20px;
+    background: linear-gradient(#FBBFCA, #FFEED6);
 }
 
-section{
-    background-color: antiquewhite;
+section {
+    background: linear-gradient(180deg,#fbbfca00, #ffeed6);
     padding: 20px;
     border-radius: 10px;
+    margin: 15px 10px 15px 10px;
+    box-shadow: 5px 5px 15px #2B061E;
+    text-align: center;
+}
+
+.section-1{
+    margin-top: 65px;
 }
 
 footer{
-    background-color: rgb(33, 75,201);
-    color: white;
+    background-color: #FFEED6;
+    color: #2B061E;
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: -10px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 8px 8px 15px #2B061E;
+    z-index: 1000;
 }
 
 @keyframes entrada {
@@ -94,13 +118,14 @@ footer{
     nav ul{
         display: none;
         flex-direction: column;
-        background-color: rgb(33, 75,201);
+        background-color: #FBBFCA ;
         position: absolute;
         top: 60px;
         right: 10px;
         width: 150px;
-        padding: 20px;
+        padding: 20px#
         border-radius: 8px;
+        font-size: 50px;
     }
     .hamburguesa{
         display: flex;
@@ -112,4 +137,16 @@ footer{
     nav .logo{
         font-size: 6vw;
     }
+}
+
+@media(max-width: 600px){
+  header nav ul li a{
+    font-size: medium;
+  }
+}
+
+@media (min-width:601px) {
+  header nav ul li a{
+    font-size: large;
+  }
 }

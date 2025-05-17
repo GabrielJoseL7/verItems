@@ -1,32 +1,12 @@
-const geo = document.getElementById("geo");
-const GeoDetails = document.getElementById("GeoDetails");
-const clock = document.getElementById("clock");
-const clockDetails = document.getElementById("clockDetails");
-const phone = document.getElementById("phone");
-const phoneDetails = document.getElementById("phoneDetails");
+const sent = document.getElementById("sent");
+const modal = document.getElementById("modal");
 
-geo.addEventListener("click", function() {
-  if (GeoDetails.classList.contains("modalClass")) {
-    GeoDetails.classList.remove("modalClass");
-  } else {
-    GeoDetails.classList.add("modalClass");
-  }
-});
+sent.addEventListener("click", function(){
+    modal.classList.add("modalView")
+})
 
-clock.addEventListener("click", function() {
-  if (clockDetails.classList.contains("modalClass")) {
-    clockDetails.classList.remove("modalClass");
-  } else {
-    clockDetails.classList.add("modalClass");
-  }
-});
+const cerrar = document.getElementById("close");
 
-
-
-phone.addEventListener("click", function() {
-  if (phoneDetails.classList.contains("modalClass")) {
-    phoneDetails.classList.remove("modalClass");
-  } else {
-    phoneDetails.classList.add("modalClass");
-  }
-});
+cerrar.addEventListener("click", function(){
+    modal.classList.remove("modalView")
+})

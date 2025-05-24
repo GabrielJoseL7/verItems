@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox-Mediaquery</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/servicios.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a href="../../index.html"><img src="../../IMG/Sin título-1.png" alt="" class="logo-img"></a></div>
+        <ul>
+                <li><a href="#" onclick="logout()">Cerrar Sesion</a></li>
+                <li><a href="../private/productos2.html">Productos</a></li>
+        </ul>
+        <div class="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    </header>
+    <main> 
+        <div>
+            <div class="flavorIceCream">
+                <h3>Vainilla con Semillas</h3>
+                <p>Q.30.00</p>
+                <button onclick="agregarAlCarrito(1)">Agregar Al Carrito</button>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Chocolate Fudge</h3>
+                <p>Q.30.00</p>
+                <button onclick="agregarAlCarrito(2)">Agregar Al Carrito</button>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Fresa</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Mint Chocolate</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Cookies & Cream</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Salted Caramel</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Pistacho</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Sorbete de Mango</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Blueberry Cheesecake</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Chicle</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Lemon Sherbet</h3>
+            </div>
+            <div class="flavorIceCream">
+                <h3>Cafe Mocca</h3>
+            </div>
+
+        </div>
+        <div id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="listado-compra"></ul>
+            <p><strong>Total</strong><span id="total">0</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2025</p>
+    </footer>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/servicios.js"></script>
+    <script src="../../js/logout.js"></script>
+    <script src="../../js/carrito.js"></script>
+</body>
+</html>
